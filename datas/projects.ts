@@ -1,4 +1,3 @@
-// On définit la "forme" d'un projet grâce à TypeScript
 export type Project = {
   id: number;
   title: string;
@@ -8,7 +7,7 @@ export type Project = {
   image: string;
 };
 
-// On crée un tableau qui contient nos projets
+// Je crée un tableau qui contient mes projets
 export const projects: Project[] = [
   {
     id: 1,

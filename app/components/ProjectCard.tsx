@@ -1,5 +1,6 @@
 import { Project } from "@/datas/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -27,9 +28,9 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
         
-        <a href={project.link} className="text-blue-600 hover:underline font-medium">
+        <Link href={`/projets/${project.id}`} className="text-blue-600 hover:underline font-medium">
           Voir le projet →
-        </a>
+        </Link>
       </div>
     </div>
   );
