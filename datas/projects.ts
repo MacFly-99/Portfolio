@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   tags: string[];
   link: string;
+  image: string;
 };
 
 // On crée un tableau qui contient nos projets
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     description: "Une API pour gérer des cargaisons de cargos.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     link: "#",
+    image: "/U-L_Cargo.png"
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     description: "Une base de données pour gérer des stocks de préparation de commandes.",
     tags: ["MySQL", "MySQL Workbench", "PHP"],
     link: "#",
+    image: "/StockGJ.png"
   },
   {
     id: 3,
@@ -29,6 +32,7 @@ export const projects: Project[] = [
     description: "Une application intranet de covoiturage pour des employés devant faire des trajets entre plusieurs villes.",
     tags: ["PHP"],
     link: "#",
+    image: "/Touche_pas_au_klaxon.png"
   },
   {
     id: 4,
@@ -36,6 +40,7 @@ export const projects: Project[] = [
     description: "Une application web pour trouver des artisans dans sa région.",
     tags: ["React", "Bootstrap", "Sass", "Node.js", "Express", "MySQL2"],
     link: "#",
+    image: "/Trouve-ton-artisan.png"
   },
   {
     id: 5,
@@ -43,5 +48,6 @@ export const projects: Project[] = [
     description: "Une plateforme e-commerce pour l'achat/revente de pièces automobiles entre particuliers.",
     tags: ["React", "Vite", "Tailwind", "Node.js", "PHP", "Symfony", "MariaDB", "MongoDB"],
     link: "#",
+    image: "/Car-Palace.png"
   }
 ];
