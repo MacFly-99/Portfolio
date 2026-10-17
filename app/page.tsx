@@ -7,7 +7,7 @@ export default function Home() {
       {/* Section Présentation */}
       <section className="mb-16 text-center">
         <h1 className="text-5xl font-bold mb-4">Salut, moi c'est Matteo Ventura</h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 dark:text-gray-300">
           Développeur Full-Stack passionné par le développement web et la sécurisation des applications.
         </p>
       </section>
