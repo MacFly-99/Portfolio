@@ -16,7 +16,7 @@ export default function Home() {
       <section>
         <h2 className="text-3xl font-bold mb-8">Mes Projets</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* On boucle sur notre tableau de projets */}
+          {/* Je boucle sur mon tableau de projets */}
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
