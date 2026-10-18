@@ -44,7 +44,10 @@ export default function AboutPage() {
           </p>
           
           <p>
-            Mon parcours m'a permis d'acquérir une solide expérience sur l'ensemble de la chaîne de développement web, allant de la conception de bases de données (MySQL), à la création d'interfaces utilisateur réactives et intuitives avec React et Next.js, puis l'intégration de fonctionnalités côté serveur avec Node.js, PHP et Symfony.
+            Mon parcours m'a permis d'acquérir une solide expérience sur l'ensemble de la chaîne de développement web, 
+            allant de la conception de bases de données (MySQL), 
+            à la création d'interfaces utilisateur réactives et intuitives avec React et Next.js, 
+            puis l'intégration de fonctionnalités côté serveur avec Node.js, PHP et Symfony.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white pt-4">Mes compétences</h2>
