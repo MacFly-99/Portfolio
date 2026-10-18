@@ -13,11 +13,11 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "U-L Cargo",
+    title: "BTW-Cargo",
     description: "Une API pour gérer des cargaisons de cargos.",
-    longDescription: "U-L Cargo est une API RESTful robuste conçue pour optimiser la logistique maritime. Elle permet de gérer le suivi des conteneurs en temps réel et la gestion des stocks. Le défi principal a été de concevoir une base de données hautement relationnelle capable de supporter des milliers de requêtes simultanées sans perte de performance.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/MacFly-99/U-L-Cargo",
+    longDescription: "BTW-Cargo est une API RESTful robuste conçue pour optimiser la logistique maritime. Elle permet de gérer le suivi des conteneurs en temps réel et la gestion des stocks. Le défi principal a été de concevoir une base de données hautement relationnelle capable de supporter des milliers de requêtes simultanées sans perte de performance.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma", "NextAuth.js", "Shadcn/ui"],
+    githubUrl: "https://github.com/MacFly-99/BTW-Cargo",
     demoUrl: "",
     image: "/U-L_Cargo.png"
   },
