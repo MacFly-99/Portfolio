@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      {/* Le body est en flex-col et min-h-screen pour que le footer reste en bas même s'il y a peu de contenu */}
       <body className={`${inter.className} bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen flex flex-col`}>
         
         <Navbar />
 
-        {/* J'enveloppe les enfants dans un flex-grow pour que le footer reste en bas */}
         <div className="flex-grow">
           {children}
         </div>
 
+        <Footer />
+        
       </body>
     </html>
   );
