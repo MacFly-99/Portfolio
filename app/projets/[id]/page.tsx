@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
+// SEO Dynamique : L'onglet du navigateur affichera "Nom du Projet | Portfolio Matteo"
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
   const project = projects.find((p) => p.id === Number(resolvedParams.id));
@@ -16,28 +17,23 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-// Cette fonction est typique des Server Components
 export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
-  // 1. J'attend les params (spécifique à Next.js 15/16)
   const resolvedParams = await params;
-  
-  // 2. Je cherche le projet correspondant à l'ID dans l'URL
   const project = projects.find((p) => p.id === Number(resolvedParams.id));
 
-  // 3. Si le projet n'existe pas, j'affiche une 404
   if (!project) {
     notFound();
   }
 
   return (
     <main className="max-w-3xl mx-auto p-8 py-16">
-      <Link href="/" className="text-blue-600 hover:underline mb-8 inline-block">
+      <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline mb-8 inline-block font-medium">
         ← Retour aux projets
       </Link>
 
-      <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+      <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">{project.title}</h1>
       
-      <div className="relative h-96 w-full mb-8 rounded-xl overflow-hidden shadow-lg">
+      <div className="relative h-96 w-full mb-8 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800">
         <Image
           src={project.image}
           alt={project.title}
@@ -48,7 +44,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
       <div className="flex flex-wrap gap-2 mb-6">
         {project.tags.map((tag) => (
-          <span key={tag} className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">
+          <span key={tag} className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm font-medium px-3 py-1 rounded">
             {tag}
           </span>
         ))}
@@ -57,8 +53,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-10">
         {project.description}
       </p>
-
-      {/* Les boutons d'action */}
+      
+      {/* Boutons d'action */}
       <div className="flex flex-wrap gap-4 pt-6 border-t border-gray-200 dark:border-gray-800">
         
         {project.demoUrl && (
@@ -85,7 +81,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           </a>
         )}
       </div>
-
     </main>
   );
 }
