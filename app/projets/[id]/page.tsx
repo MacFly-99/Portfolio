@@ -69,6 +69,8 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
           src={project.image}
           alt={project.title}
           fill
+          // Ajout de sizes pour indiquer que l'image prend 100% de la largeur jusqu'à 1024px, puis 1024px max
+          sizes="(max-width: 1024px) 100vw, 1024px"
           className="object-cover"
           priority // Indique à Next.js de charger cette image en priorité
         />
