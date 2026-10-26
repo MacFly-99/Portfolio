@@ -84,7 +84,7 @@ export default function AboutPage() {
           </p>
           
           <p>
-            Mon parcours m'a permis d'acquérir une solide expérience sur l'ensemble de la chaîne de développement web, allant de la conception de bases de données (MySQL), à la création d'interfaces utilisateur réactives et intuitives avec React et Next.js, puis l'intégration de fonctionnalités côté serveur avec Node.js, PHP et Symfony.
+            Mon parcours m'a permis d'acquérir une solide expérience sur l'ensemble de la chaîne de développement web, allant de la conception de bases de données (SQL), à la création d'interfaces utilisateur réactives et intuitives avec React et Next.js, puis l'intégration de fonctionnalités côté serveur avec Node.js, PHP et Symfony.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white pt-4">Mes compétences</h2>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             animate="visible"
             className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2"
           >
-            {["React.js", "Next.js", "TypeScript", "Vite", "Bootstrap", "Sass", "Tailwind CSS", "Node.js", "Express.js", "PHP", "Symfony", "MySQL", "MariaDB", "MongoDB", "Git"].map((skill) => (
+            {["React.js", "Next.js", "TypeScript", "Vite", "Bootstrap", "Sass", "Tailwind CSS", "SCSS", "Node.js", "Express.js", "PHP", "Symfony", "MySQL", "MariaDB", "PostgreSQL", "MongoDB", "Git"].map((skill) => (
               <motion.div 
                 key={skill} 
                 variants={skillItem}
