@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.div
-      // On définit les états d'animation pour la carte
       variants={{
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0 }
@@ -24,6 +23,8 @@ export default function ProjectCard({ project }: { project: Project }) {
               src={project.image} 
               alt={`Aperçu du projet ${project.title}`}
               fill
+              // Ajout de sizes pour éviter les sauts de mise en page
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>

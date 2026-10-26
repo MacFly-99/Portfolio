@@ -49,7 +49,7 @@ export const projects: Project[] = [
     tags: ["PHP", "Bootstrap"],
     githubUrl: "https://github.com/MacFly-99/Touche_Pas_Au_Klaxon",
     demoUrl: "https://touche-pas-au-klaxon-s080.onrender.com",
-    image: "/Touche_pas_au_Klaxon.png"
+    image: "/Touche_Pas_Au_Klaxon.png"
   },
   {
     id: 5,
